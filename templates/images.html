@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{%if res != null %}
+<h1 style="color: darkred;">Showing images of {{res}}:</h1>
+{% endif %}
+{% for item in i %}
+<img src="{{item}}" width="245" height="200">
+{% endfor %}
+{% endblock %}

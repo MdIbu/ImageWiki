@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: #85FFBD;
+			background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+		}
+		.round{
+			border-radius:10px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<form action=" {% url "topic" %} "  method='get' style="margin-top:20px;">
+	<b>Enter the topic:</b>  <input class="round" type=text name="imgtopic" autocomplete="off" required>
+	<input type="submit" value="Images" class="round" name="submit">
+    <input type="submit" value="Definition" class="round" name="submit">
+    </form>
+	</center>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
